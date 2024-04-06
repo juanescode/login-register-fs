@@ -1,0 +1,2 @@
+En el react => jsx(html and javascript)
+En el mismo react uso 
