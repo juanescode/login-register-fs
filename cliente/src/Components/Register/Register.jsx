@@ -24,17 +24,12 @@ const Register = () => {
   //Onclick podemos ver lo que el ususario
   const createUser = (e) => {
     e.preventDefault()
-    //Se requiere que axios cree una API que se conecte al servidor
     Axios.post('http://localhost:3002/register', {
-      //Crear una variable para enviar al servidor a traves de la ruta
       Email: email,
       UserName: userName,
       Password: password
     }).then(()=>{
-      //Al registrarse, redirigiremos al usuario a la página de inicio de sesión
       navigateTo('/')
-
-      //Tambien limpiar los campos 
       setEmail('')
       setUserName('')
       setUserName('')
